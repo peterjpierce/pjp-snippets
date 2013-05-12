@@ -1,0 +1,26 @@
+##
+# snippets for snipMate
+# from
+# git://github.com/peterjpierce/snipmate-snippets
+
+snippet she
+	#!/usr/bin/env python
+#
+snippet im
+	import ${1:module}
+#
+snippet from
+	from ${1:module} import ${2:submodule} as ${3:localname}
+#
+snippet log
+	self.log.${1:info}("${2:entry}")
+#
+snippet prop
+		@property
+		def ${1:foo}(self):
+			return self._$1
+
+		@$1.setter
+		def $1(self, ${2:arg}):
+			self._$1 = $2
+#
